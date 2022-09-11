@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+        <title>Remote DESKTOP</title>
+    <body>
+        <style>
+            input {
+                width:52%;
+            }
+        </style>
+        <center>
+       <p> Remote Desktop Connection</p>
+
+Connected To: <p id="result"></p>
+
+<input type="text" placeholder="enter remote Address, Example : remote.example.com" cols="40" id="SearchText" rows="2"></textarea>
+
+
+
+<script>
+function myFunction() {
+    var result = document.getElementById("SearchText").value;
+	document.getElementById("result").innerHTML = result;
+	document.getElementById("faucet").href="http://" + result;
+}		
+</script>
+<p></p>
+<button onclick="myFunction()" class="submit_button" type="button" style="background-color:#b0e0e6 ; border:none ; padding:10px; font-size:20px;">Connect</button>
+<a href="#" id="faucet"><button style="background-color:#b0e0e6 ; border:none ; padding:10px; font-size:20px;">Show Session</button></a>
+</center>
+        </body>
+        </html>

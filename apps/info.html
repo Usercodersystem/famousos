@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info</title>
+    <style>
+        button {
+            color: #ffffff;
+            background: #00adff;
+        }
+        body {
+            background: #b2ff95;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var msg = new SpeechSynthesisUtterance();
+msg.text = "system information"
+window.speechSynthesis.speak(msg);
+    </script>
+    <center><h2>Info</h2></center>
+    <p>Status : Online</p>
+    IP address : <script>var ip = location.host;
+    document.write(ip); </script>
+    <p>Virtual Processor : 16</p>
+    <p>Virtual Ram (GB) : 256.5</p>
+    <p>Virtual Disk total (GB) : 512</p>
+    <p>Virtual Internet Status : Connected</p>
+    <p>Virtual Internet Driver Name : Famous OS Virtual Ethernet Adapter</p>
+    <p>Remote Access : Yes</p>
+    <p>License Status : Registered </p>
+    
+
+</body>
+</html>

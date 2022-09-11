@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+    <style>
+        button {
+            color: #ffffff;
+            background: #00adff;
+        }
+        body {
+            background: #b2ff95;
+        }
+    </style>
+</head>
+<body>
+   <center><h1>User Accounts</h1></center>
+  <button onclick="lockuser()">Change Username And Password</button>
+  <button onclick="lock()">Backup Username and password</button>
+  <a href="customize.php"><button>Customize Login Screen</button></a>
+  <a href="/css/styles.css"><button>Backup Login Style</button></a>
+  <script>
+      function lock() {
+       let number = prompt("For Access Backup You Need Enter Backup Password")
+      }
+      if(number == 84919938818) {
+        windows.open("lock.js")  
+      }else {
+          alert("Password Incorrect")
+      }
+  </script>
+  <script>
+      function lockuser() {
+       let number = prompt("For Access Change Password You Need Enter Change Password")
+      }
+      if(number == 91938891919828) {
+        windows.open("change.php")  
+      }else {
+          alert("Password Incorrect")
+      } 
+  </script>
+</body>
+</html>

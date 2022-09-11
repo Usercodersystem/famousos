@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>License Settings</title>
+    <style>
+        button {
+            color: #ffffff;
+            background: #00adff;
+        }
+        body {
+            background: #b2ff95;
+        }
+    </style>
+</head>
+<body>
+    <center><h2>License Settings</h2></center>
+    <p></p>
+    <p>License Status : Registered</p>
+    <button onclick="reg()" id="ls">Register License</button>
+    <p></p>
+    <button disabled="disabled">Buy License (License Already Registered)</button>
+    <p></p>
+       <button onclick="cmd()">Open CMD</button>
+    <script>
+        function cmd() {
+var command;
+var cmd1 = "net users";
+var cmd2 = "ipconfig";
+var cmd3 = "exit";
+var cmd4 = "license";
+var cmd5 = "help";
+var cmd6 = "cd";
+var cmd7 = "information";
+var cmd8 = "register";
+var cmd9 = "buy license";
+command = prompt('Famous Command Line v3.5 \n A:/famous/system32>');
+
+if (command == cmd1) {
+ alert("admin")
+} if(command == cmd2) {
+     var ip = location.host;
+    alert(ip);
+} if(command == cmd3) {
+ alert("ok")  
+} if(command == cmd4) {
+ alert("Your License Information \n Expiration date : Never \n Status : Registered \n Licensekey : 1029***********71 \n How can licenseskey help me? \n 1- For registered Systems you can login to system without username & Password if you forget password or username or both \n 2- You Can use Remote Desktop Services To connect to remote server of host your system to connect from another system \n 3- Never Expaire Licensekey \n 4- You can use portable apps from store")   
+}if(command == cmd5) {
+alert("Help commands \n net users : get all users from system \n ipconfig : get system ip \n license : get license information \n CD : list of files directory \n information : get system versions and infos \n Register and buy license : Buy and register licenses from command line")   
+} if(command == cmd6) {
+    alert("Access Denied To Root Folder")
+}if(command == cmd7) {
+ alert("system information \n Virsion : 3.5 \n build number : IAN9199J2JIQ \n License status : registered \n system name : TEST-FAMOUS \n OS Name : Famous Desktop 2022")   
+} if(command == cmd8) {
+  alert("Your system is already Registered")  
+}if(command == cmd9) {
+ alert("You Can Buy Licenses From Store")   
+}else {
+  alert("Sorry But This Command Not Defined \n If you see message after enter Defined Command Please Don't see this & click OK to see result defined command")
+}
+}
+    </script>
+   <script>
+       confirm("Please Do not Change Any edits on this settings Because This action can be break your system Do you want to continue? ") 
+   </script>
+ 
+        <center>License Status</center> 
+       <info>
+           <p>Status : Registered</p>
+           <p>Expaire After : Never</p>
+           <p>License key : 1029***********71</p>
+           <p></p>
+           System IP : <script>var ip = location.host;
+    document.write(ip);</script>
+    <p>RSA KEY : RSA8IKQNHDIANNWBHDUIQKNBHQ</p>
+       </info>
+    <script>
+        function reg() {
+        
+
+ alert("License Already Registered");
+            document.getElementById("ls").disabled = true;
+  }
+    </script>
+ 
+</body>
+</html>

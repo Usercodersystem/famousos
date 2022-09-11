@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <style>
+        button {
+            color: #ffffff;
+            background: #00adff;
+        }
+        body {
+            background: #b2ff95;
+        }
+    </style>
+</head>
+<body>
+   <center><h1>Remote Settings</h1></center>
+   <p>Remote Desktop Configuration</p>
+   <!-- Change it-->
+   Remote Server <input type="checkbox" checked disabled >
+   <P></P>
+  Remote Server Address : <input id="ipadd" readonly="true" type="text"> <script>
+      var ip = location.host;
+      document.getElementById("ipadd").value = ip;
+ 
+  </script>
+  <p></p>
+  <script src="lock.js">
+      document.getElementById("usr").value = username; 
+  </script>
+  Remote Username : <input id="usr" readonly="true" type="text" value="Your Login Username" disabled >  
+  <p></p>
+  <a href="change.php"><button>Change Username And password </button></a>
+
+</body>
+</html>

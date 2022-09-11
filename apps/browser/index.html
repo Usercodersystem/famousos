@@ -1,0 +1,36 @@
+<head>
+    <title>Browser</title>
+    <style>
+ 
+body{
+ margin:0;
+ overflow:hidden;
+}
+ 
+iframe{
+ border:none;
+ width:100vw;
+ height:100vh;
+}
+ 
+</style>
+</head>
+<body> <style> input { width:52%; } </style> <center><p id="result"></p>
+
+<p></p>
+
+<input placeholder="Enter Url With Https" type="password" cols="40" id="iframe" rows="2"></textarea>
+
+
+<script>function myFunction() { var result = document.getElementById("iframe").value;	document.getElementById("result").innerHTML = result;	document.getElementById("faucet").href="Br.php?url=" + result;}		</script> 
+
+<button onclick="myFunction()" class="submit_button" type="button" style="background-color:#b0e0e6 ; border:none ; padding:10px; font-size:20px;">Submit</button>
+
+
+
+<a href="#" id="faucet" target="browser"><button style="background-color:#b0e0e6 ; border:none ; padding:10px; font-size:20px;">GO</button></a>
+
+<p></p>
+<iframe name="browser" src="newtab.html"></iframe>
+<p></p> 
+

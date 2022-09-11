@@ -1,0 +1,18 @@
+
+<head>
+    <style>
+            iframe {
+                border:none;
+            }
+        </style>
+<script type="text/javascript">
+    function setBrowserFrameSource(){
+        var browserFrame = document.getElementById("browser");
+        browserFrame.src= document.getElementById("txtUrl").value;
+    }
+</script>
+</head>
+<body>
+	<form method="post" target="browser"> <input id="txtUrl" style="width:82%;" placeholder="Enter Portable App Link" name="url" type="text" /> <input style="width:8%;" type="button" value="Launch" onclick="setBrowserFrameSource(); return false;"/> </form> <iframe id="browser" name="browser" src="Start.html" style="height:100%; width:100%"></iframe>
+			
+</body>
